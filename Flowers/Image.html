@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Images</title>
+    <script>
+        var image = new Image();
+        image.src = "yellowflowers1.png";
+
+        function draw() {
+            var canvas = document.getElementById("myimage");
+            var context = canvas.getContext("2d")
+            context.drawImage(image, 0, 0, 175, 175);
+        } // end function draw
+
+        window.addEventListener("load", draw, false);
+    </script>
+</head>
+<body>
+    <canvas id="myimage" width="200" height="200" style="border: 1px solid Black;"></canvas>
+</body>
+</html>
